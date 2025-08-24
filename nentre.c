@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+ // Versão C do exercício 8.
+
 int main (void){
     int a = 0.0;
     int b = 0.0;

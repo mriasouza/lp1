@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+
+#define vit 3
+#define emp 1
+#define der 0
+
+typedef struct {
+    char nomeTime[100];
+    int numV, numE, numD, pontosT;
+
+} Brasileirao;
+
+int main () {
+    Brasileirao times[3];
+    int i;
+    int t = 3;
+    int auxMa = 0;
+    int auxMe = 0;
+
+    for(i = 0; i < t; i++){
+        printf("Digite o nome do seu time: ");
+        fgets(times[i].nomeTime, sizeof(times[i].nomeTime), stdin);
+        size_t len = strlen(times[i].nomeTime);
+        if (len > 0 && times[i].nomeTime[len - 1] == '\n') {
+            times[i].nomeTime[len - 1] = '\0';
+        }
+        printf("Digite o número de vitórias: ");
+        scanf("%d", &times[i].numV);
+        printf("Digite o número de empates: ");
+        scanf("%d", &times[i].numE);
+        printf("Digite o número de derrota: ");
+        scanf("%d", &times[i].numD);
+        times[i].pontosT = times[i].numV * vit + times[i].numE * emp + times[i].numD * der;
+        getchar();
+    }
+
+    for(i = 1; i < t; i++){
+        if(times[i].pontosT > times[auxMa].pontosT){
+            auxMa = i;
+        } 
+        else if(times[i].pontosT < times[auxMe].pontosT){
+            auxMe = i;
+        }
+    } 
+
+    printf("%s tem a maior pontuação\n", times[auxMa].nomeTime);
+    printf("%s tem a menor pontuação\n", times[auxMe].nomeTime);
+
+    return 0;
+}
+

@@ -1,6 +1,6 @@
 #include <stdio.h>
  
-// Converter de milhas para quilômetros
+// Ex. 4: Converter de milhas para quilômetros
 
 #define miles 1.6
 

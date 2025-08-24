@@ -5,6 +5,8 @@
 #define emp 1
 #define der 0
 
+ // Ex. 7: Calculadora de pontos do Campeonato Brasileiro
+
 typedef struct {
     char nomeTime[100];
     int numV, numE, numD, pontosT;

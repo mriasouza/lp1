@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Ler números e escrever a soma
+// Ex. 5: Ler números e escrever a soma
 
 int main (void){
     int n;

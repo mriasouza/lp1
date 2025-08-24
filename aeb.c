@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Comparação numérica
+// Ex. 2: Comparação numérica
 
 int main (void){
     double a = 0.0;

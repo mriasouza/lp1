@@ -12,9 +12,9 @@ typedef struct {
 } Brasileirao;
 
 int main () {
-    Brasileirao times[3];
+    Brasileirao times[20];
     int i;
-    int t = 3;
+    int t = 20;
     int auxMa = 0;
     int auxMe = 0;
 

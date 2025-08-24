@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Ex. 6: Somatório dos quadrados
+// Ex. 6: Somatório dos quadrados.
 
 int main(void){
 
